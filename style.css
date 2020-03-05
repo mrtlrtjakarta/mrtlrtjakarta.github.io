@@ -4,15 +4,6 @@
 	font-size: 32px;
 }
 
-/*Caraousel*/
-.carousel-item {
-	height:550px;
-}
-
-.carousel-item img {
-	margin-top: -250px;
-}
-
 /*Jumbotron*/
 .jumbotron {
 	background-image: url(img/backdrop.png);
@@ -61,6 +52,15 @@
 		background-position: 0 -250px;
 		margin-top:-100px;
 	}
+
+	/*Caraousel*/
+.carousel-item {
+	height:550px;
+}
+
+.carousel-item img {
+	margin-top: -250px;
+}
 
 
 }
