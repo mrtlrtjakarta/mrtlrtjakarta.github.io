@@ -1,0 +1,57 @@
+/*Navbar*/
+.navbar-brand{
+	font-family: Caladea;
+	font-size: 32px;
+}
+
+/*Jumbotron*/
+.jumbotron {
+	background-image: url(img/backdrop.png);
+	background-size: cover;
+}
+
+.jumbotron .display-4 {
+	color:white;
+	text-align:center;
+	margin-top: 100px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+
+/* Utility*/
+.tombol {
+	text-transform: uppercase;
+	border-radius: 40px;
+}
+
+
+/* Desktop Ver. */
+@media (min-width: 992px) {
+	.navbar-brand, .nav-link {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	}
+
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 25px;
+	}
+
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #0B63DC;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+	.jumbotron{
+		height: 500px;
+		background-position: 0 -250px;
+		margin-top:-100px;
+	}
+
+
+}
