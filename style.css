@@ -222,6 +222,10 @@
 	text-align: center;
 }
 
+.tlrow{
+    padding-left: 100px;
+}
+
 @media (min-width: 576px) {
   .timeline:before {
     left: 50%;
@@ -253,10 +257,9 @@
     text-align: left;
   }
 }
-
-@media (min-width: 768px) {
   .tlrow{
-  	background-color: white;
+    background-color: white;
+    padding-left: 75px;
   }
 }
 
@@ -281,7 +284,8 @@
     padding: 0 20px 20px;
   }
   .tlrow{
-  	background-color: white;
+    background-color: white;
+    padding-left: 0px;
   }
 }
 
@@ -303,6 +307,10 @@
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
+  .tlrow {
+    background-color: white;
+    padding-left: 0px;
+  }
 }
 
 /*Map*/
@@ -311,11 +319,19 @@
 	text-align: center;
 	padding:20px;
 }
+  .peta {
+    width:250px;
+    height:350px;
+  }
 
 @media (min-width: 992px) {
 	.work{
 	text-align: left;
 	}
+  .peta {
+    width:300px;
+    height:400px;
+  }
 }
 
 
@@ -325,6 +341,6 @@
 }
 
 .footer p{
-	color:#acacac;
+	color:#000000;
 	font-size: 18px;
 }
