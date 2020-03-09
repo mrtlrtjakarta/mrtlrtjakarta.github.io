@@ -1,3 +1,23 @@
+.form1 {
+    width: 246px;
+    margin: 10px 0 0 0;
+ }
+
+.c1 {
+    width: 38px;
+    vertical-align: middle !important;
+    padding: 4px 20px 8px 0;
+}
+
+.c4 {
+    vertical-align: middle !important;
+    padding: 15px 0px 8px 0;
+}
+
+.worked{
+  padding: 4px 20px 8px 0;
+}
+
 /*Navbar*/
 .navbar-brand{
 	font-family: Caladea;
@@ -344,3 +364,12 @@
 	color:#000000;
 	font-size: 18px;
 }
+
+.ket{
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .ket{
+  text-align: left;
+  }

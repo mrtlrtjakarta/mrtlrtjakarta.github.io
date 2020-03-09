@@ -7,9 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="tail.select-bootsrap4.css">
     <!-- My CSS -->
-      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
 
     <title>MRT-LRT-JAKARTA</title>
   </head>
@@ -27,7 +27,7 @@
       <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#History">History</a>
       <a class="nav-item nav-link" href="#Map">Map</a>
-      <a class="nav-item nav-link" href="#">Hours & Fare</a>
+      <a class="nav-item nav-link" href="#Hours">Hours & Fare</a>
       <a class="nav-item nav-link" href="#">TOD</a>
       <a class="nav-item btn btn-primary tombol" href="#" tabindex="-1" aria-disabled="true">Contact Me</a>
       </div>
@@ -178,7 +178,184 @@
         </div>
       </div>  
     </div>
+    </section>
 <!-- Akhir Map -->
+
+<!-- Hours and Fare -->
+  <section class="page-section" id="Hours">
+    <div class="container">
+		<div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Hours and Fare</h2>
+          <hr>
+        </div>
+      	</div>
+       <div class ="row">
+        <div class="col-lg-4">
+          <div class="container form1">
+			<form id="search">
+  			<table>
+      		  <tbody>
+     			 <tr class="tr">
+       			 <td class="c1">From</td>
+       			 <td>
+			        <select id="select1">
+			        	<option value="" selected="" disabled="">Select origin</option>
+					    <option>M01 Lebak Bulus</option>
+					    <option>M02 Fatmawati</option>
+					    <option>M03 Cipete</option>
+					    <option>M04 Haji Nawi</option>
+					    <option>M05 Blok A</option>
+					    <option>M06 Blok M</option>
+					    <option>M07 ASEAN</option>
+					    <option>M08 Senayan</option>
+					    <option>M09 Istora</option>
+					    <option>M10 Bendungan Hilir</option>
+					    <option>M11 Setiabudi</option>
+					    <option>M12 Dukuh Atas</option>
+					    <option>M13 Bund. HI</option>
+  					</select>
+       			 </td>
+     	 		 </tr>
+
+     			 <tr class="tr">
+       			 <td class="c1">To</td>
+       			 <td>
+			        <select id="select2">
+			        	<option value="" selected="" disabled="">Select destination</option>
+					    <option>M01 Lebak Bulus</option>
+					    <option>M02 Fatmawati</option>
+					    <option>M03 Cipete</option>
+					    <option>M04 Haji Nawi</option>
+					    <option>M05 Blok A</option>
+					    <option>M06 Blok M</option>
+					    <option>M07 ASEAN</option>
+					    <option>M08 Senayan</option>
+					    <option>M09 Istora</option>
+					    <option>M10 Bendungan Hilir</option>
+					    <option>M11 Setiabudi</option>
+					    <option>M12 Dukuh Atas</option>
+					    <option>M13 Bund. HI</option>
+  					</select>
+       			 </td>
+     	 		 </tr>
+
+				 <tr>
+				 <td class="c1">Time</td>
+				 <td colspan="2">
+					<select name="hour" id="hour">
+						<option value="05">05am</option>
+						<option value="06">06am</option>
+						<option value="07">07am</option>
+						<option value="08">08am</option>
+						<option value="09">09am</option>
+						<option value="10">10am</option>
+						<option value="11">11am</option>
+						<option value="12">12pm</option>
+						<option value="13">01pm</option>
+						<option value="14">02pm</option>
+						<option value="15">03pm</option>
+						<option value="16">04pm</option>
+						<option value="17">05pm</option>
+						<option value="18">06pm</option>
+						<option value="19">07pm</option>
+						<option value="20">08pm</option>
+						<option value="21">09pm</option>
+						<option value="22">10pm</option>
+						<option value="23">11pm</option>
+					</select>
+					<select name="minute" id="minute">
+						<option value="00">00</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+						<option value="32">32</option>
+						<option value="33">33</option>
+						<option value="34">34</option>
+						<option value="35">35</option>
+						<option value="36">36</option>
+						<option value="37">37</option>
+						<option value="38">38</option>
+						<option value="39">39</option>
+						<option value="40">40</option>
+						<option value="41">41</option>
+						<option value="42">42</option>
+						<option value="43">43</option>
+						<option value="44">44</option>
+						<option value="45">45</option>
+						<option value="46">46</option>
+						<option value="47">47</option>
+						<option value="48">48</option>
+						<option value="49">49</option>
+						<option value="50">50</option>
+						<option value="51">51</option>
+						<option value="52">52</option>
+						<option value="53">53</option>
+						<option value="54">54</option>
+						<option value="55">55</option>
+						<option value="56">56</option>
+						<option value="57">57</option>
+						<option value="58">58</option>
+						<option value="59">59</option>
+					</select>
+				</td>
+				</tr>
+
+
+				<tr>
+				<td class="c4" colspan="3"><div><input class="s_btn" type="button" value="Search" id="searchButton" onclick="closeGoogleTipOnSearch();searchRoute();" name="Input"></div>
+				</td>
+				</tr>
+
+			  </tbody>
+			</table>
+			</form>
+		  </div>
+		</div>
+
+        <div class="col-lg-8 ket">
+         <div id="results_tripcalc" style="display: block;">
+         <h3>Route Directions</h3>
+         	<strong> Lebak Bulus to Bund. HI</strong>: 
+         	<br>This journey will take about 19 minutes and the standart ticket fare is IDR 10,000.
+		 	<br><br>
+		 	<h3>Timetable</h3>
+		 	The nearest time is at 5:30am.
+		 </div>
+        </div>
+      </div>  
+  	</div>
+  </section>
+<!-- Akhir Hours and Fare -->
+
 
 <!-- Akhir Tab -->
 
@@ -186,7 +363,7 @@
   <div class="container">
   <div class="row footer">
     <div class="col text-center">
-      <p> - 2020 Created by Alun Sagara Putra - </p>
+	<a> © 2020 | Alun Sagara Putra </a>
     </div>
   </div>
   </div>
@@ -197,5 +374,14 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="tail.select-full.min.js"></script>
+    <script>
+    	tail.select('#select1',{
+    		search: true
+    	});
+    	tail.select('#select2',{
+    		search: true
+    	});
+    </script>
   </body>
 </html>
