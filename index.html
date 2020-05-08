@@ -5,9 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="tail.select-bootsrap4.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- CSS Bootstrap -->
+    <link href="default/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="default/icofont/icofont.min.css" rel="stylesheet">
+    <link href="default/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="default/venobox/venobox.css" rel="stylesheet">
+    <link href="default/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="default/aos/aos.css" rel="stylesheet">
+
     <!-- My CSS -->
      <link rel="stylesheet" href="style.css">
 
@@ -15,38 +23,38 @@
   </head>
   <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#"> MRT & LRT Jakarta </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#History">History</a>
-      <a class="nav-item nav-link" href="#Map">Map</a>
-      <a class="nav-item nav-link" href="#Hours">Hours & Fare</a>
-      <a class="nav-item nav-link" href="#">TOD</a>
-      <a class="nav-item btn btn-primary tombol" href="#" tabindex="-1" aria-disabled="true">Contact Me</a>
-      </div>
-    </div>
-  </div>
-</nav>
-<!-- Akhir Navbar -->
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
 
-<!-- Header -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase"> MRT & LRT Jakarta</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Brand New Transportation System in Jakarta</h2>
-        <hr>
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html">MRT & LRT Jakarta</a></h1>
       </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">History</a></li>
+          <li><a href="#services">Map</a></li>
+          <li><a href="#portfolio">Fare & Timetable</a></li>
+          <li><a href="#team">Service Area</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+
     </div>
-  </header>
-<!-- Akhir Header -->
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+      <h1>MRT & LRT Jakarta</h1>
+      <h2>Brand New Transportation System in Jakarta</h2>
+      <a href="#about" class="button">Download Map</a>
+    </div>
+  </section><!-- End Hero -->        
 
 <!-- Tab -->
 
@@ -182,181 +190,1036 @@
     </section>
 <!-- Akhir Map -->
 
-<!-- Hours and Fare -->
+<!-- Fare Calculator -->
   <section class="page-section" id="Hours">
     <div class="container">
 		<div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Hours and Fare</h2>
+          <h2 class="section-heading text-uppercase"> Fare List</h2>
+          <hr>
+          <h3 class="section-subheading text-muted"> Every passengers must have a ticket for the full journey. You can buy a single-trip or multi-trip ticket from vending machines & counters on every stations or simply touch your own electronic card to the reader on the ticket gate to ride the train. </h3>
+        </div>
+      </div>
+<br>
+<div class="text-center">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for origin">
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+<table id="myTable">
+  <tr class="header">
+    <th style="width:25%;">Origin</th>
+    <th style="width:25%;">Destination</th>
+    <th style="width:25%;">Duration</th>
+    <th style="width:20%;">Fare (IDR)</th>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>Fatmawati</td>
+                <td>3 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>Cipete Raya</td>
+                <td>6 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>Haji Nawi</td>
+                <td>9 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>Blok A</td>
+                <td>10 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>Blok M</td>
+                <td>13 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>ASEAN</td>
+                <td>15 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>Senayan</td>
+                <td>17 Minutes</td>
+                <td> 10,000</td>
+            </tr>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>Istora</td>
+                <td>19 Minutes</td>
+                <td> 11,000</td>
+            </tr>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>Bend. Hilir</td>
+                <td>22 Minutes</td>
+                <td> 12,000</td>
+            </tr>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>Setiabudi</td>
+                <td>24 Minutes</td>
+                <td> 13,000</td>
+            </tr>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>Dukuh Atas</td>
+                <td>26 Minutes</td>
+                <td> 14,000</td>
+            </tr>
+            <tr>
+                <td>Lebak Bulus</td>
+                <td>Bundaran HI</td>
+                <td>29 Minutes</td>
+                <td> 14,000</td>
+            <tr>
+                <td>Fatmawati</td>
+                <td>Lebak Bulus</td>
+                <td>3 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Fatmawati</td>
+                <td>Cipete</td>
+                <td>3 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Fatmawati</td>
+                <td>Haji Nawi</td>
+                <td>5 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Fatmawati</td>
+                <td>Blok A</td>
+                <td>7 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Fatmawati</td>
+                <td>Blok M</td>
+                <td>10 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Fatmawati</td>
+                <td>ASEAN</td>
+                <td>12 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Fatmawati</td>
+                <td>Senayan</td>
+                <td>14 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Fatmawati</td>
+                <td>Istora</td>
+                <td>16 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Fatmawati</td>
+                <td>Bend. Hilir</td>
+                <td>19 Minutes</td>
+                <td> 10,000</td>
+            </tr>
+            <tr>
+                <td>Fatmawati</td>
+                <td>Setiabudi</td>
+                <td>21 Minutes</td>
+                <td> 11,000</td>
+            </tr>
+            <tr>
+                <td>Fatmawati</td>
+                <td>Dukuh Atas</td>
+                <td>23 Minutes</td>
+                <td> 12,000</td>
+            </tr>
+            <tr>
+                <td>Fatmawati</td>
+                <td>Bundaran HI</td>
+                <td>26 Minutes</td>
+                <td> 13,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>Lebak Bulus</td>
+                <td>6 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>Fatmawati</td>
+                <td>3 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>Haji Nawi</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>Blok A</td>
+                <td>4 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>Blok M</td>
+                <td>7 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>ASEAN</td>
+                <td>9 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>Senayan</td>
+                <td>11 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>Istora</td>
+                <td>13 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>Bend. Hilir</td>
+                <td>16 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>Setiabudi</td>
+                <td>18 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>Dukuh Atas</td>
+                <td>20 Minutes</td>
+                <td> 10,000</td>
+            </tr>
+            <tr>
+                <td>Cipete</td>
+                <td>Bundaran HI</td>
+                <td>23 Minutes</td>
+                <td> 11,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>Lebak Bulus</td>
+                <td>8 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>Fatmawati</td>
+                <td>5 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>Cipete</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>Blok A</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>Blok M</td>
+                <td>5 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>ASEAN</td>
+                <td>7 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>Senayan</td>
+                <td>9 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>Istora</td>
+                <td>11 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>Bend. Hilir</td>
+                <td>14 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>Setiabudi</td>
+                <td>16 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>Dukuh Atas</td>
+                <td>18 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Haji Nawi</td>
+                <td>Bundaran HI</td>
+                <td>21 Minutes</td>
+                <td> 11,000</td>
+            </tr>
+                        <tr>
+                <td>Blok A</td>
+                <td>Lebak Bulus</td>
+                <td>11 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Blok A</td>
+                <td>Fatmawati</td>
+                <td>8 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Blok A</td>
+                <td>Cipete</td>
+                <td>5 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Blok A</td>
+                <td>Haji Nawi</td>
+                <td>3 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Blok A</td>
+                <td>Blok M</td>
+                <td>3 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Blok A</td>
+                <td>ASEAN</td>
+                <td>5 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Blok A</td>
+                <td>Senayan</td>
+                <td>7 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Blok A</td>
+                <td>Istora</td>
+                <td>9 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Blok A</td>
+                <td>Bend. Hilir</td>
+                <td>12 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Blok A</td>
+                <td>Setiabudi</td>
+                <td>14 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Blok A</td>
+                <td>Dukuh Atas</td>
+                <td>16 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Blok A</td>
+                <td>Bundaran HI</td>
+                <td>19 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>Lebak Bulus</td>
+                <td>13 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>Fatmawati</td>
+                <td>10 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>Cipete</td>
+                <td>7 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>Haji Nawi</td>
+                <td>5 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>Blok A</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>ASEAN</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>Senayan</td>
+                <td>4 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>Istora</td>
+                <td>6 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>Bend. Hilir</td>
+                <td>9 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>Setiabudi</td>
+                <td>11 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>Dukuh Atas</td>
+                <td>13 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Blok M</td>
+                <td>Bundaran HI</td>
+                <td>16 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Lebak Bulus</td>
+                <td>16 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Fatmawati</td>
+                <td>13 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Cipete</td>
+                <td>10 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Haji Nawi</td>
+                <td>8 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Blok A</td>
+                <td>5 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Blok M</td>
+                <td>3 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Senayan</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Istora</td>
+                <td>4 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Bend. Hilir</td>
+                <td>7 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Setiabudi</td>
+                <td>9 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Dukuh Atas</td>
+                <td>11 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>ASEAN</td>
+                <td>Bundaran HI</td>
+                <td>14 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>Lebak Bulus</td>
+                <td>18 Minutes</td>
+                <td> 10,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>Fatmawati</td>
+                <td>15 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>Cipete</td>
+                <td>12 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>Haji Nawi</td>
+                <td>10 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>Blok A</td>
+                <td>7 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>Blok M</td>
+                <td>5 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>ASEAN</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>Istora</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>Bend. Hilir</td>
+                <td>5 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>Setiabudi</td>
+                <td>7 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>Dukuh Atas</td>
+                <td>9 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Senayan</td>
+                <td>Bundaran HI</td>
+                <td>12 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>Lebak Bulus</td>
+                <td>20 Minutes</td>
+                <td> 11,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>Fatmawati</td>
+                <td>17 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>Cipete</td>
+                <td>14 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>Haji Nawi</td>
+                <td>12 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>Blok A</td>
+                <td>9 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>Blok M</td>
+                <td>7 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>ASEAN</td>
+                <td>4 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>Senayan</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>Bend. Hilir</td>
+                <td>3 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>Setiabudi</td>
+                <td>5 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>Dukuh Atas</td>
+                <td>7 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Istora</td>
+                <td>Bundaran HI</td>
+                <td>10 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>Lebak Bulus</td>
+                <td>22 Minutes</td>
+                <td> 12,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>Fatmawati</td>
+                <td>19 Minutes</td>
+                <td> 10,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>Cipete</td>
+                <td>16 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>Haji Nawi</td>
+                <td>14 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>Blok A</td>
+                <td>11 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>Blok M</td>
+                <td>9 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>ASEAN</td>
+                <td>6 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>Senayan</td>
+                <td>4 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>Istora</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>Setiabudi</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>Dukuh Atas</td>
+                <td>4 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Bend. Hilir</td>
+                <td>Bundaran HI</td>
+                <td>7 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>Lebak Bulus</td>
+                <td>25 Minutes</td>
+                <td> 13,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>Fatmawati</td>
+                <td>22 Minutes</td>
+                <td> 10,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>Cipete</td>
+                <td>19 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>Haji Nawi</td>
+                <td>17 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>Blok A</td>
+                <td>14 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>Blok M</td>
+                <td>11 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>ASEAN</td>
+                <td>8 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>Senayan</td>
+                <td>6 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>Istora</td>
+                <td>4 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>Bend. Hilir</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>Dukuh Atas</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Setiabudi</td>
+                <td>Bundaran HI</td>
+                <td>5 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>Lebak Bulus</td>
+                <td>26 Minutes</td>
+                <td> 14,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>Fatmawati</td>
+                <td>23 Minutes</td>
+                <td> 12,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>Cipete</td>
+                <td>20 Minutes</td>
+                <td> 10,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>Haji Nawi</td>
+                <td>18 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>Blok A</td>
+                <td>15 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>Blok M</td>
+                <td>13 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>ASEAN</td>
+                <td>10 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>Senayan</td>
+                <td>8 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>Istora</td>
+                <td>6 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>Bend. Hilir</td>
+                <td>4 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>Setiabudi</td>
+                <td>2 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Dukuh Atas</td>
+                <td>Bundaran HI</td>
+                <td>3 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>Lebak Bulus</td>
+                <td>29 Minutes</td>
+                <td> 14,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>Fatmawati</td>
+                <td>27 Minutes</td>
+                <td>13,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>Cipete</td>
+                <td>24 Minutes</td>
+                <td>11,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>Haji Nawi</td>
+                <td>21 Minutes</td>
+                <td>10,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>Blok A</td>
+                <td>18 Minutes</td>
+                <td> 9,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>Blok M</td>
+                <td>16 Minutes</td>
+                <td> 8,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>ASEAN</td>
+                <td>13 Minutes</td>
+                <td> 7,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>Senayan</td>
+                <td>11 Minutes</td>
+                <td> 6,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>Istora</td>
+                <td>9 Minutes</td>
+                <td> 5,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>Bend. Hilir</td>
+                <td>7 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>Setiabudi</td>
+                <td>5 Minutes</td>
+                <td> 4,000</td>
+            </tr>
+            <tr>
+                <td>Bundaran HI</td>
+                <td>Dukuh Atas</td>
+                <td>3 Minutes</td>
+                <td> 3,000</td>
+            </tr>
+      </table>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Akhir Fare Calculator -->
+
+<!-- TOD -->
+  <section class="page-section" id="TOD">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase"> TOD 
+          	<br><sub>Transit Oriented Development</sub></h2>
           <hr>
         </div>
-      	</div>
-       <div class ="row">
-        <div class="col-lg-4">
-          <div class="container form1">
-			<form id="search">
-  			<table>
-      		  <tbody>
-     			 <tr class="tr">
-       			 <td class="c1">From</td>
-       			 <td>
-			        <select id="select1">
-			        	<option value="" selected="" disabled="">Select origin</option>
-					    <option>M01 Lebak Bulus</option>
-					    <option>M02 Fatmawati</option>
-					    <option>M03 Cipete</option>
-					    <option>M04 Haji Nawi</option>
-					    <option>M05 Blok A</option>
-					    <option>M06 Blok M</option>
-					    <option>M07 ASEAN</option>
-					    <option>M08 Senayan</option>
-					    <option>M09 Istora</option>
-					    <option>M10 Bendungan Hilir</option>
-					    <option>M11 Setiabudi</option>
-					    <option>M12 Dukuh Atas</option>
-					    <option>M13 Bund. HI</option>
-  					</select>
-       			 </td>
-     	 		 </tr>
+      </div>
+    <iframe width=100% height="580" src="https://ugm-gis.maps.arcgis.com/apps/MapJournal/index.html?appid=5333833f450942beb0a3993ad1ff4183">
+	</iframe>
+    </div>
+    </section>
+<!-- Akhir TOD -->
 
-     			 <tr class="tr">
-       			 <td class="c1">To</td>
-       			 <td>
-			        <select id="select2">
-			        	<option value="" selected="" disabled="">Select destination</option>
-					    <option>M01 Lebak Bulus</option>
-					    <option>M02 Fatmawati</option>
-					    <option>M03 Cipete</option>
-					    <option>M04 Haji Nawi</option>
-					    <option>M05 Blok A</option>
-					    <option>M06 Blok M</option>
-					    <option>M07 ASEAN</option>
-					    <option>M08 Senayan</option>
-					    <option>M09 Istora</option>
-					    <option>M10 Bendungan Hilir</option>
-					    <option>M11 Setiabudi</option>
-					    <option>M12 Dukuh Atas</option>
-					    <option>M13 Bund. HI</option>
-  					</select>
-       			 </td>
-     	 		 </tr>
-
-				 <tr>
-				 <td class="c1">Time</td>
-				 <td colspan="2">
-					<select name="hour" id="hour">
-						<option value="05">05am</option>
-						<option value="06">06am</option>
-						<option value="07">07am</option>
-						<option value="08">08am</option>
-						<option value="09">09am</option>
-						<option value="10">10am</option>
-						<option value="11">11am</option>
-						<option value="12">12pm</option>
-						<option value="13">01pm</option>
-						<option value="14">02pm</option>
-						<option value="15">03pm</option>
-						<option value="16">04pm</option>
-						<option value="17">05pm</option>
-						<option value="18">06pm</option>
-						<option value="19">07pm</option>
-						<option value="20">08pm</option>
-						<option value="21">09pm</option>
-						<option value="22">10pm</option>
-						<option value="23">11pm</option>
-					</select>
-					<select name="minute" id="minute">
-						<option value="00">00</option>
-						<option value="01">01</option>
-						<option value="02">02</option>
-						<option value="03">03</option>
-						<option value="04">04</option>
-						<option value="05">05</option>
-						<option value="06">06</option>
-						<option value="07">07</option>
-						<option value="08">08</option>
-						<option value="09">09</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-						<option value="12">12</option>
-						<option value="13">13</option>
-						<option value="14">14</option>
-						<option value="15">15</option>
-						<option value="16">16</option>
-						<option value="17">17</option>
-						<option value="18">18</option>
-						<option value="19">19</option>
-						<option value="20">20</option>
-						<option value="21">21</option>
-						<option value="22">22</option>
-						<option value="23">23</option>
-						<option value="24">24</option>
-						<option value="25">25</option>
-						<option value="26">26</option>
-						<option value="27">27</option>
-						<option value="28">28</option>
-						<option value="29">29</option>
-						<option value="30">30</option>
-						<option value="31">31</option>
-						<option value="32">32</option>
-						<option value="33">33</option>
-						<option value="34">34</option>
-						<option value="35">35</option>
-						<option value="36">36</option>
-						<option value="37">37</option>
-						<option value="38">38</option>
-						<option value="39">39</option>
-						<option value="40">40</option>
-						<option value="41">41</option>
-						<option value="42">42</option>
-						<option value="43">43</option>
-						<option value="44">44</option>
-						<option value="45">45</option>
-						<option value="46">46</option>
-						<option value="47">47</option>
-						<option value="48">48</option>
-						<option value="49">49</option>
-						<option value="50">50</option>
-						<option value="51">51</option>
-						<option value="52">52</option>
-						<option value="53">53</option>
-						<option value="54">54</option>
-						<option value="55">55</option>
-						<option value="56">56</option>
-						<option value="57">57</option>
-						<option value="58">58</option>
-						<option value="59">59</option>
-					</select>
-				</td>
-				</tr>
-
-
-				<tr>
-				<td class="c4" colspan="3"><div><input class="s_btn" type="button" value="Search" id="searchButton" onclick="closeGoogleTipOnSearch();searchRoute();" name="Input"></div>
-				</td>
-				</tr>
-
-			  </tbody>
-			</table>
-			</form>
-		  </div>
-		</div>
-
-        <div class="col-lg-8 ket">
-         <div id="results_tripcalc" style="display: block;">
-         <h3>Route Directions</h3>
-         	<strong> Lebak Bulus to Bund. HI</strong>: 
-         	<br>This journey will take about 19 minutes and the standart ticket fare is IDR 10,000.
-		 	<br><br>
-		 	<h3>Timetable</h3>
-		 	The nearest time is at 5:30am.
-		 </div>
+<!-- Contact -->
+  <section class="page-section" id="Contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase"> Contact </h2>
+          <hr>
         </div>
-      </div>  
-  	</div>
-  </section>
-<!-- Akhir Hours and Fare -->
+      </div>
+      
 
+    </div>
+    </section>
+<!-- Akhir Contact -->
+
+<section class="page-section" id="services">
+            <div class="container">
+                <h2 class="text-center mt-0">At Your Service</h2>
+                <hr class="divider my-4">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <svg class="svg-inline--fa fa-gem fa-w-18 fa-4x text-primary mb-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gem" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M485.5 0L576 160H474.9L405.7 0h79.8zm-128 0l69.2 160H149.3L218.5 0h139zm-267 0h79.8l-69.2 160H0L90.5 0zM0 192h100.7l123 251.7c1.5 3.1-2.7 5.9-5 3.3L0 192zm148.2 0h279.6l-137 318.2c-1 2.4-4.5 2.4-5.5 0L148.2 192zm204.1 251.7l123-251.7H576L357.3 446.9c-2.3 2.7-6.5-.1-5-3.2z"></path></svg><!-- <i class="fas fa-4x fa-gem text-primary mb-4"></i> -->
+                            <h3 class="h4 mb-2">Sturdy Themes</h3>
+                            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <svg class="svg-inline--fa fa-laptop-code fa-w-20 fa-4x text-primary mb-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="laptop-code" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"></path></svg><!-- <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i> -->
+                            <h3 class="h4 mb-2">Up to Date</h3>
+                            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <svg class="svg-inline--fa fa-globe fa-w-16 fa-4x text-primary mb-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="globe" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"></path></svg><!-- <i class="fas fa-4x fa-globe text-primary mb-4"></i> -->
+                            <h3 class="h4 mb-2">Ready to Publish</h3>
+                            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <svg class="svg-inline--fa fa-heart fa-w-16 fa-4x text-primary mb-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg><!-- <i class="fas fa-4x fa-heart text-primary mb-4"></i> -->
+                            <h3 class="h4 mb-2">Made with Love</h3>
+                            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 <!-- Akhir Tab -->
 
@@ -370,19 +1233,25 @@
   </div>
 <!-- Akhir Footer -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="tail.select-full.min.js"></script>
-    <script>
-    	tail.select('#select1',{
-    		search: true
-    	});
-    	tail.select('#select2',{
-    		search: true
-    	});
-    </script>
-  </body>
+
+  <a href="#" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
+
+  <!-- JS Bootstrap -->
+  <script src="default/jquery/jquery.min.js"></script>
+  <script src="default/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="default/jquery.easing/jquery.easing.min.js"></script>
+  <script src="default/php-email-form/validate.js"></script>
+  <script src="default/jquery-sticky/jquery.sticky.js"></script>
+  <script src="default/venobox/venobox.min.js"></script>
+  <script src="default/waypoints/jquery.waypoints.min.js"></script>
+  <script src="default/counterup/counterup.min.js"></script>
+  <script src="default/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="default/owl.carousel/owl.carousel.min.js"></script>
+  <script src="default/aos/aos.js"></script>
+
+  <!-- Template Main JS -->
+  <script src="default/js/main.js"></script>
+
+</body>
+
 </html>
