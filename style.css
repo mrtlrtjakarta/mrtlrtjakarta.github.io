@@ -57,8 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 767px) {
 .peta {
-  width:490px;
-  height:640px;}
+  width:420px;
+  height:590px;}
 }
 /* Small Mobile */
 @media only screen and (max-width: 479px) {
@@ -871,7 +871,7 @@ overflow: auto;
     text-align:center;
   }
   .facilities-item .fi-title {
-    margin-bottom: 330px;
+    margin-bottom: 200px;
   }
 }
 
