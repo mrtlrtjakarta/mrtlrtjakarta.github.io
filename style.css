@@ -25,10 +25,16 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("img/gantungan.jpg");
 }
 .peta {
-  width:250px;
-  height:350px;
+  width:300px;
+  height:420px;
 }
 
+@media (min-width: 992px) {
+.peta {
+  width:450px;
+  height:600px;
+  }
+}
   .about-us-countdown-area .about-content-text h6 {
     font-size: 25px;
     font-weight: 500;
