@@ -1,0 +1,52 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 10/05/2020 13:15
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-leisure:before { content: "\f100"; }
+.flaticon-commerce-and-shopping:before { content: "\f101"; }
+.flaticon-bus-stop:before { content: "\f102"; }
+.flaticon-food-and-restaurant:before { content: "\f103"; }
+.flaticon-slumber:before { content: "\f104"; }
+.flaticon-fork:before { content: "\f105"; }
+    
+    $font-Flaticon-leisure: "\f100";
+    $font-Flaticon-commerce-and-shopping: "\f101";
+    $font-Flaticon-bus-stop: "\f102";
+    $font-Flaticon-food-and-restaurant: "\f103";
+    $font-Flaticon-slumber: "\f104";
+    $font-Flaticon-fork: "\f105";

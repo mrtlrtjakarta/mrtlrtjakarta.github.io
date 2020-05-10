@@ -18,6 +18,61 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/* :: 10.0 About Area CSS */
+.about-us-countdown-area {
+  position: relative;
+  z-index: 1;
+    background-image: url("img/gantungan.jpg");}
+  .about-us-countdown-area .about-content-text h6 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #df42b1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #4b4d7b;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    display: inline-block; }
+  .about-us-countdown-area .about-content-text h3 {
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .about-us-countdown-area .about-content-text h3 {
+        font-size: 32px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .about-us-countdown-area .about-content-text h3 {
+        font-size: 24px; } }
+    @media only screen and (max-width: 767px) {
+      .about-us-countdown-area .about-content-text h3 {
+        font-size: 22px; } }
+  .about-us-countdown-area .about-content-text p {
+    color: #ffffff; }
+
+/*Section*/
+.page-section {
+  padding: 20px 0px;
+}
+
+.page-section h2.section-heading {
+  font-size: 50px;
+
+}
+.page-section h3.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-transform: none;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.page-section hr {
+  width:250px;
+  border-top: 1px solid #a8a0a0;
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -656,5 +711,163 @@ h1, h2, h3, h4, h5, h6 {
   .tlrow {
     background-color: white;
     padding-left: 0px;
+  }
+}
+
+/* Fare and timetable */
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 70%;
+  padding: 12px 15px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#myTable th, #myTable td {
+  text-align: center;
+  padding: 7px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.my-custom-scrollbar {
+position: relative;
+height: 508px;
+overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+display: block;
+}
+
+@media only screen and (max-width: 767px) {
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+  padding: 12px 15px 12px 0px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.my-custom-scrollbar {
+position: relative;
+height: 495px;
+overflow: auto;
+}
+}
+
+/* End of Fare and Timetable */
+
+
+
+/*---------------------
+  Facilities Section
+-----------------------*/
+
+.facilities-item {
+  margin: 0 -15px;
+  height: 796px;
+  padding-top: 95px;
+  padding-left: 70px;
+  padding-right: 100px;
+  padding-bottom: 60px;
+}
+
+.facilities-item.fi-right .fi-title {
+  margin-bottom: 488px;
+}
+
+.facilities-item .fi-title {
+  margin-bottom: 375px;
+}
+
+.facilities-item .fi-title h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-bottom: 8px;
+}
+
+.facilities-item .fi-title p {
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 4px;
+  line-height: 27px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.facilities-item .fi-features {
+  margin-bottom: 28px;
+}
+
+.facilities-item .fi-features .fi-info {
+  display: inline-block;
+  text-align: center;
+  margin-right: 24px;
+}
+
+.facilities-item .fi-features .fi-info i {
+  color: #ffffff;
+}
+
+.facilities-item .fi-features .fi-info p {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.facilities-item .primary-btn {
+  background: transparent;
+  border: 3px solid #ffffff;
+}
+
+.primary-btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 18px 38px;
+  color: #ffffff;
+  background: #F9AD81;
+  letter-spacing: 0.5px;
+}
+
+/* Large Mobile */
+@media only screen and (max-width: 767px) {
+  .facilities-item {
+    height: 600px;
+    padding-left: 40px;
+    padding-right: 15px;
+    text-align:center;
+  }
+  .facilities-item .fi-title {
+    margin-bottom: 330px;
+  }
+}
+
+/* Small Mobile */
+@media only screen and (max-width: 479px) {
+  .facilities-item .fi-title {
+    margin-bottom: 180px;
+  }
+  .facilities-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .facilities-item.fi-right .fi-title {
+    margin-bottom: 430px;
   }
 }
