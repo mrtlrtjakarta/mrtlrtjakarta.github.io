@@ -57,14 +57,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 767px) {
 .peta {
-  width:370px;
-  height:500px;}
+  width:320px;
+  height:450px;}
 }
 /* Small Mobile */
 @media only screen and (max-width: 479px) {
 .peta {
-  width:370px;
-  height:500px;}
+  width:320px;
+  height:450px;}
 }
 }
 
