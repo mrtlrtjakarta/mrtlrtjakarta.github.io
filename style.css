@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1;
     background-image: url("img/gantungan.jpg");}
+.peta {
+  width:500px;
+  height:670px;
+}
   .about-us-countdown-area .about-content-text h6 {
     font-size: 25px;
     font-weight: 500;
@@ -50,6 +54,19 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 22px; } }
   .about-us-countdown-area .about-content-text p {
     color: #ffffff; }
+
+@media only screen and (max-width: 767px) {
+.peta {
+  width:490px;
+  height:640px;}
+}
+/* Small Mobile */
+@media only screen and (max-width: 479px) {
+.peta {
+  width:370px;
+  height:500px;}
+}
+}
 
 /*Section*/
 .page-section {
