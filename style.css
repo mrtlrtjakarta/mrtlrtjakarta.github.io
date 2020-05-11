@@ -22,11 +22,32 @@ h1, h2, h3, h4, h5, h6 {
 .about-us-countdown-area {
   position: relative;
   z-index: 1;
-    background-image: url("img/gantungan.jpg");
+    background-image: url("img/gantungan.png");
 }
+
+.about-us-countdown-area .button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #8fc04e;
+  color: #fff;
+}
+
+.about-us-countdown-area .button:hover {
+  background: #8fc04e;
+}
+
+.section-padding-100-0 {
+  padding-top: 50px;
+  padding-bottom: 30px; }
+
 .peta {
-  width:300px;
-  height:420px;
+  width:350px;
+  height:470px;
 }
 
 @media (min-width: 992px) {
@@ -36,18 +57,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
   .about-us-countdown-area .about-content-text h6 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
-    color: #df42b1;
+    color: #8fc04e;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom: 2px solid #4b4d7b;
+    border-bottom: 2px solid #8fc04e;
     margin-bottom: 20px;
     padding-bottom: 5px;
     display: inline-block; }
   .about-us-countdown-area .about-content-text h3 {
     font-size: 40px;
-    color: #ffffff;
+    color: #8fc04e;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px; }
@@ -59,9 +80,10 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 24px; } }
     @media only screen and (max-width: 767px) {
       .about-us-countdown-area .about-content-text h3 {
-        font-size: 22px; } }
+        font-size: 25px; } }
   .about-us-countdown-area .about-content-text p {
-    color: #ffffff; }
+    font-size:16px;
+    color: #fff; }
 
 /*Section*/
 .page-section {
@@ -70,10 +92,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-section h2.section-heading {
   font-size: 50px;
-
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #a8a0a0;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    display: inline-block; 
 }
 .page-section h3.section-subheading {
   font-size: 16px;
+  color: black;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 20px;
@@ -85,6 +115,22 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid #a8a0a0;
 }
 
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .page-section h2.section-heading {
+        font-size: 50px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .page-section h2.section-heading {
+        font-size: 40px; } 
+      .page-section h3.section-subheading {
+        font-size: 15.5px; }}
+    @media only screen and (max-width: 767px) {
+      .page-section h2.section-heading {
+        font-size: 40px; }
+      .page-section h3.section-subheading {
+        font-size: 15.5px; }}
+  .about-us-countdown-area .about-content-text p {
+    font-size:16px;
+    color: #fff; }
 
 /*--------------------------------------------------------------
 # Back to top button
