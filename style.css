@@ -88,6 +88,9 @@ h1, h2, h3, h4, h5, h6 {
 /*Section*/
 .page-section {
   padding: 20px 0px;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
 }
 
 .page-section h2.section-heading {
@@ -797,7 +800,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
+  background-color: #282828;
 }
 
 .my-custom-scrollbar {
@@ -928,4 +931,42 @@ overflow: auto;
   .facilities-item.fi-right .fi-title {
     margin-bottom: 430px;
   }
+}
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.cta h3 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.cta p {
+  color: #fff;
+}
+
+.cta .cta-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.cta .cta-btn:hover {
+  background: #8fc04e;
+  border: 2px solid #8fc04e;
 }
