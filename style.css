@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 .about-us-countdown-area {
   position: relative;
   z-index: 1;
-    background-image: url("img/gantungan.png");
+    background-color: #121213;
 }
 
 .about-us-countdown-area .button {
@@ -57,17 +57,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
   .about-us-countdown-area .about-content-text h6 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 50px;
+    font-weight: 700;
     color: #8fc04e;
-    text-transform: uppercase;
     letter-spacing: 1px;
     border-bottom: 2px solid #8fc04e;
     margin-bottom: 20px;
     padding-bottom: 5px;
     display: inline-block; }
   .about-us-countdown-area .about-content-text h3 {
-    font-size: 40px;
+    font-size: 30px;
     color: #8fc04e;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -87,26 +86,25 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Section*/
 .page-section {
-  padding: 20px 0px;
+  padding: 35px 0px;
   position: relative;
   z-index: 1;
-  background-color: #fff;
+  background-color: #121213;
 }
 
 .page-section h2.section-heading {
-  font-size: 50px;
-    font-weight: 500;
-    color: black;
-    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+    color: #8fc04e;
     letter-spacing: 1px;
-    border-bottom: 2px solid #a8a0a0;
+    border-bottom: 2px solid #8fc04e;
     margin-bottom: 20px;
     padding-bottom: 5px;
     display: inline-block; 
 }
 .page-section h3.section-subheading {
   font-size: 16px;
-  color: black;
+  color: #ffffff;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 20px;
@@ -115,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .page-section hr {
   width:250px;
-  border-top: 1px solid #a8a0a0;
+  border-top: 1px solid #ffffff;
 }
 
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -548,7 +546,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 2px;
   margin-left: -1.5px;
   content: '';
-  background-color: #6a5e5e;
+  background-color: #ffffff;;
 }
 
 .timeline > li {
@@ -631,7 +629,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .timeline .timeline-heading h4 {
   margin-top: 0;
-  color: inherit;
+  color: #ffff66;
 }
 
 .timeline .timeline-heading h4.subheading {
@@ -640,15 +638,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
+  color: #fff;
   margin-bottom: 0;
 }
 
 .coba h3 {
-  text-align: center;
+  color: #ffff66;
+  text-align: left;
 }
 
 .coba p {
-  text-align: center;
+  color: #fff;
+  text-align: left;
 }
 
 @media (min-width: 576px) {
@@ -683,45 +684,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
   .tlrow{
-    background-color: white;
-    padding-left: 0px;
-  }
-}
-
-@media (min-width: 768px) {
-  .timeline:before {
-    left: 50%;
-  }
-  .timeline > li {
-    min-height: 100px;
-    margin-bottom: 100px;
-  }
-  .timeline > li .timeline-panel {
-    float: left;
-    width: 41%;
-    padding: 0 20px 20px 30px;
-    text-align: right;
-  }
-  .timeline > li .timeline-image {
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-left: -50px;
-  }
-  .timeline > li .timeline-image h4 {
-    font-size: 13px;
-    line-height: 18px;
-    margin-top: 16px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    float: right;
-    padding: 0 30px 20px 20px;
-    text-align: left;
-  }
-}
-  .tlrow{
-    background-color: transparent;
-    padding-left: 75px;
+    background-color: inherit;
+    padding-left: 100px;
   }
 }
 
@@ -746,8 +710,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px 20px;
   }
   .tlrow{
-    background-color: white;
+    background-color: inherit;
     padding-left: 0px;
+  }
+  .coba h3 {
+  color: #ffff66;
+  text-align: center;
+  }
+  .coba p {
+  color: #fff;
+  text-align: center;
   }
 }
 
@@ -770,8 +742,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 100px 20px 20px;
   }
   .tlrow {
-    background-color: white;
+    background-color: #121213;
     padding-left: 0px;
+  }
+  .coba h3 {
+  color: #ffff66;
+  text-align: center;
+  }
+  .coba p {
+  color: #fff;
+  text-align: center;
   }
 }
 
@@ -937,15 +917,20 @@ overflow: auto;
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background-color: #121213;
   background-size: cover;
   padding: 60px 0;
 }
 
 .cta h3 {
-  color: #fff;
-  font-size: 50px;
-  font-weight: 700;
+    font-size: 50px;
+    font-weight: 700;
+    color: #8fc04e;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #8fc04e;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    display: inline-block; 
 }
 
 .cta p {
