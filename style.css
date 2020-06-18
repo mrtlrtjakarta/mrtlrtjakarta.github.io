@@ -488,15 +488,21 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 24px;
+}
+
+#hero p {
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #ffff66;
 }
 
 #hero .button {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 15px;
-  padding: 8px 20px;
+  padding: 7px 18px;
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
@@ -526,8 +532,24 @@ h1, h2, h3, h4, h5, h6 {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
+  #hero p {
+  margin-bottom: 2px;
+  font-size: 15px;
+  color: #ffff66;
+  }
+  #hero .button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 5px 15px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #8fc04e;
+  color: #fff;
+}
 }
 
 /*----------------- # History Section -----------------*/
@@ -939,15 +961,13 @@ overflow: auto;
 
 .cta .cta-btn {
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 25px;
+  padding: 8px 25px;
+  border-radius: 50px;
   transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #fff;
+  margin: 10px;
+  border: 2px solid #8fc04e;
   color: #fff;
 }
 
